@@ -1,0 +1,302 @@
+a {
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.hero-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../images/img1.jpg");
+  background-size: cover;
+  background-position-x: 20%;
+  background-position-y: 20%;
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  -webkit-animation: interLoad 2s forwards;
+          animation: interLoad 2s forwards;
+}
+
+.menu {
+  color: black;
+  font-weight: bold;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  background: white;
+  height: 100vh;
+  width: 50%;
+  z-index: 89;
+  text-transform: uppercase;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+nav svg {
+  float: right;
+  margin: 2em;
+  width: .5em;
+  padding: 3em;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 8em;
+}
+
+nav ul a {
+  color: black;
+  padding: .75em 2em;
+  display: block;
+}
+
+nav ul a:hover {
+  background: #cac8c8;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header svg {
+  width: 3em;
+  margin-top: -00.6em;
+  cursor: pointer;
+}
+
+.hero {
+  color: white;
+  height: 90vh;
+  -webkit-animation: moveDown 1s ease-in-out forwards;
+          animation: moveDown 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+.hero svg {
+  stroke: white;
+  fill: white;
+  position: absolute;
+  bottom: 2em;
+  width: 1em;
+  animation: moveArrow 1s alternate-reverse infinite;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 2em;
+  line-height: 3.3rem;
+}
+
+.subhead {
+  font-size: 1.4rem;
+}
+
+.more-info img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 11em;
+}
+
+.more-info .title {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.more-info .desc {
+  line-height: 1.5rem;
+}
+
+.open-nav {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+@media only screen and (min-width: 680px) {
+  body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 1.5em;
+  }
+}
+
+@media only screen and (min-width: 920px) {
+  .menu {
+    display: none;
+  }
+  nav {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav svg.benu {
+    display: none;
+  }
+  nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0;
+  }
+  nav ul a {
+    color: white;
+    padding: .5em 1.5em;
+    font-size: .9rem;
+  }
+  nav ul a:hover {
+    background: none;
+    -webkit-text-decoration: underlined;
+            text-decoration: underlined;
+  }
+  .hero-img {
+    left: unset;
+    right: 0;
+    width: 50%;
+    height: 42em;
+    margin: 20px;
+  }
+  .logo {
+    color: black;
+  }
+  .logo span {
+    color: red;
+  }
+  section.hero {
+    color: black;
+    height: auto;
+    width: 40%;
+    margin-bottom: 8em;
+  }
+  section.hero svg.down {
+    stroke: black;
+    position: unset;
+    fill: black;
+  }
+  .feature {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+        grid-template-columns: repeat(2, auto);
+    gap: 3em;
+    margin-bottom: 8em;
+  }
+  .feature img {
+    width: 40em;
+  }
+  .feature .damn {
+    text-align: right;
+    width: 25em;
+  }
+  .add-feature {
+    display: -ms-grid;
+    display: grid;
+    gap: 3em;
+    margin-bottom: 8em;
+        grid-template-areas: "left right";
+  }
+  .add-feature img {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: left;
+    width: 40em;
+  }
+  .add-feature .damn {
+    text-align: right;
+    width: 25em;
+    -ms-grid-column-align: right;
+        justify-self: right;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+
+@-webkit-keyframes interLoad {
+  from {
+    -webkit-clip-path: polygon(1% 1%, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(1% 1%, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(1% 1%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(1% 1%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes interLoad {
+  from {
+    -webkit-clip-path: polygon(1% 1%, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(1% 1%, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(1% 1%, 100% 0, 100% 100%, 0 100%);
+            clip-path: polygon(1% 1%, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@-webkit-keyframes moveArrow {
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@keyframes moveArrow {
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+@-webkit-keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes moveDown {
+  from {
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=index.css.map */

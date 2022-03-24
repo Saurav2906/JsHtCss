@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Supermercado+One&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div class="hero-img"></div>
+    <div class="wrapper">
+        <header>
+            <a class="logo" href="#">Ted <span>Rube</span> </a>
+            <nav>
+                <svg class="benu" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                viewBox="0 0 26 26" style="enable-background:new 0 0 26 26;" xml:space="preserve">
+           <g>
+               <path style="fill:#030104;" d="M21.125,0H4.875C2.182,0,0,2.182,0,4.875v16.25C0,23.818,2.182,26,4.875,26h16.25
+                   C23.818,26,26,23.818,26,21.125V4.875C26,2.182,23.818,0,21.125,0z M18.78,17.394l-1.388,1.387c-0.254,0.255-0.67,0.255-0.924,0
+                   L13,15.313L9.533,18.78c-0.255,0.255-0.67,0.255-0.925-0.002L7.22,17.394c-0.253-0.256-0.253-0.669,0-0.926l3.468-3.467
+                   L7.221,9.534c-0.254-0.256-0.254-0.672,0-0.925l1.388-1.388c0.255-0.257,0.671-0.257,0.925,0L13,10.689l3.468-3.468
+                   c0.255-0.257,0.671-0.257,0.924,0l1.388,1.386c0.254,0.255,0.254,0.671,0.001,0.927l-3.468,3.467l3.468,3.467
+                   C19.033,16.725,19.033,17.138,18.78,17.394z"/></g></svg>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Sneaker</a></li>
+                    <li><a href="#">Player</a></li>
+                </ul>
+            </nav>
+            <svg class="menu" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 283.426 283.426" style="enable-background:new 0 0 283.426 283.426;" xml:space="preserve">
+            <g>
+                <rect x="0" y="40.84" style="fill:#010002;" width="283.426" height="47.735"/>
+                <rect x="0" y="117.282" style="fill:#010002;" width="283.426" height="47.735"/>
+                <rect x="0" y="194.851" style="fill:#010002;" width="283.426" height="47.735"/>
+            </g></svg>
+        </header>
+        <section class="hero">
+            <h1>Regain your confidence on the court</h1>
+
+            <p class="subhead">A shoe build on purpose to take your game to the next level</p>
+            <svg class="down" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 20.633 20.633" style="enable-background:new 0 0 20.633 20.633;" xml:space="preserve">
+<g>
+	<path d="M10.79,15.617l9.648-9.646c0.133-0.131,0.195-0.301,0.195-0.473s-0.062-0.344-0.195-0.473l-0.012-0.012
+		c-0.125-0.127-0.295-0.195-0.472-0.195h-4.682c-0.18,0-0.348,0.068-0.473,0.195l-4.48,4.479l-4.48-4.479
+		C5.711,4.886,5.54,4.818,5.366,4.818H0.684c-0.182,0-0.349,0.068-0.475,0.195L0.196,5.025C0.068,5.148,0,5.322,0,5.498
+		c0,0.176,0.068,0.348,0.196,0.473l9.648,9.646C10.108,15.88,10.53,15.88,10.79,15.617z"/>
+	</g></svg>
+        </section>
+        <section class="more-info">
+            <div class="feature">
+                <div class="Damn">
+                    <p class="title">LightW</p>
+                    <p class="desc">  Damn it feels good to be a gangsta</p>
+                </div>
+                <img src="images/img2.jpg" alt="">
+            </div>
+            <div class="add-feature">
+                <div class="Damn">
+                    <p class="title">bightW</p>
+                    <p class="desc">Damn it feels good to be a stupid</p>
+                </div>
+                <img src="images/img3.jpg" alt="">
+            </div>
+            <div class="feature">
+                <div class="Damn">
+                    <p class="title">SightW</p>
+                    <p class="desc">Damn it feels good to be a Prime Minister</p>
+                </div>
+                <img src="images/img4.jpg" alt="">
+            </div>
+            
+        </section>
+    </div>
+    <script>
+        const menu=document.querySelector('.menu');
+        const close=document.querySelector('.benu');
+        const nav=document.querySelector('nav');
+
+        menu.addEventListener('click',()=>{
+            nav.classList.add('open-nav');
+        })
+        close.addEventListener('click',()=>{
+            nav.classList.remove('open-nav');
+        })
+    </script>
+</body>
+</html>
